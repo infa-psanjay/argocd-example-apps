@@ -5,6 +5,7 @@ metadata:
   generateName: upgrade-sql-schema
   annotations:
     helm.sh/hook: pre-install
+    helm.sh/hook-delete-policy: HookSucceeded
     helm.sh/hook-weight: "-2"
 spec:
   template:
